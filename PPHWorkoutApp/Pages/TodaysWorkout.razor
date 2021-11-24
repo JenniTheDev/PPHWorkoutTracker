@@ -1,0 +1,27 @@
+﻿@page "/TodaysWorkout"
+
+
+<h2>Today's Workout</h2>
+
+<div>
+    <h4>@todaysWorkoutType </h4>
+</div>
+
+<div>
+   
+
+</div>
+
+
+
+@code {
+
+    [Parameter]
+    public string todaysWorkoutType { get; set; } = string.Empty;
+
+    [Parameter]
+    public List<Exercise> exercisesToDo { get; set; } = new List<Exercise>();
+
+    public class Exercise {}
+  
+}
